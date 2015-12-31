@@ -1,155 +1,503 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="css/zhimaster.css" type="text/css">
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/rotateRollingBanner.min.js"></script>
-<title>芝麻管家——小区通知，在线报修，缴物业费，生活服务，智慧社区，业主必备</title>
-<meta name="keywords" content="物业管理,生活服务,智慧社区,业主必备,物业账单,小区通知">
-</head>
-<body>
-<div class="container-fluid" id="LG">
-  <div class="row-fluid">
-    <div class="span12">
-      <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container-fluid">
-            <div class="span2"></div>
-            <div class="span8"> <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a> <a href="#" class="brand">芝麻管家</a>
-              <div class="nav-collapse collapse navbar-responsive-collapse">
-                <ul class="nav pull-right">
-                  <li> <a href="#summary">概述</a> </li>
-                  <li> <a href="#feature">特性</a> </li>
-                  <li> <a href="#download">下载</a> </li>
-                  <li> <a href="#about">关于</a> </li>
-                </ul>
-                </li>
-                </ul>
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>芝麻管家——小区通知，在线报修，缴物业费，生活服务，智慧社区，业主必备</title>
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Elegant icon font -->
+     <link rel="stylesheet" href="css/line-icons.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Prettyphoto -->
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <!-- Scrolling nav css -->
+    <link rel="stylesheet" href="css/scrolling-nav.css">
+    <!-- Template styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive styles-->
+	<link rel="stylesheet" href="css/responsive.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript">
+    var Sys = {};  
+    var ua = navigator.userAgent.toLowerCase();  
+    var s;  
+    var scan;  
+    (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] : (s = ua  
+            .match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] : (s = ua  
+            .match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] : (s = ua  
+            .match(/opera.([\d.]+)/)) ? Sys.opera = s[1] : (s = ua  
+            .match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;  
+    
+    //进行测试  
+    if (Sys.ie) {  
+        scan = "您目前使用的ie浏览器，建议您更换谷歌浏览器浏览网页，以达到最佳效果！";  
+        alert(scan)
+    }  
+ 
+    </script>
+    
+  </head>
+  <body data-spy="scroll" data-target=".navbar-fixed-top">
+    
+<!-- Header start -->
+	<header id="header" role="banner" >
+		<nav class="navbar navbar-default navbar-fixed-top"  id="tf-menu">
+			<div class="container">
+				<div class="row">
+					<!-- Logo start -->
+					<div class="navbar-header">
+					    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					    </button>
+					    <div class="navbar-brand">
+						    <a class="page-scroll" href="#slider-part">
+						    	<img class="img-responsive" src="http://7xnh17.com1.z0.glb.clouddn.com/zhimaguanjia_logo.png" alt="logo">
+						    </a> 
+					    </div>                   
+					</div><!--/ Logo end -->
+					<div class="collapse navbar-collapse clearfix navMenu" role="navigation">
+						<ul class="nav navbar-nav navbar-right">
+				            <li class="active"><a class="page-scroll" href="#slider-part" >首页</a></li>
+				            <li><a class="page-scroll" href="#feature" >功能</a></li>
+				            <li><a class="page-scroll" href="#about" >优势</a></li>
+				            <li><a class="page-scroll" href="#benefit" >价值</a></li>
+				            <li><a class="page-scroll" href="#contact" >联系我们</a></li>
+				        </ul>
+	      			</div><!--/ Navigation end -->
+				</div><!--/ Row end -->
+			</div><!--/ Container end -->
+		</nav>
+	</header><!--/ Header end -->
+    <!-- END MAIN NAV -->
+
+     <!-- slider section -->
+    <section class="slider" id="slider-part">
+        <div class="slider-wrap">
+            <div class="texture-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="slider-img pull-right hidden-xs">
+                            <img src="images/slider2.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-1">
+                        <div class="slider-content ">
+                            <h1>芝麻管家</h1>
+                            <h2>你的小事，我的大事</h2>
+                            <ul class="top-link list-inline">
+                                <li><a href="#"><i class="fa fa-android"></i> Android</a></li>
+                                <li><a href="https://itunes.apple.com/app/id1061866053?mt=8" target="_blank"><i class="fa fa-apple"></i>Apple store</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row end  -->
+        </div> <!-- container end  -->
+    </section>
+    <!-- slider section end -->
+    
+	<div class="copyrights">©2015 尚房科技</div>
+
+    <!-- Section features start -->
+    <section id="feature">
+    	<div class="container">
+    		<div class="row">
+    			<div class="heading-inner text-center">
+    				<h2 class="sec-title"> <span>芝麻管家</span>是什么</h2>
+    				<p>芝麻管家小区管理平台是一个以社区生活场景为基础，连接业主与物业服务的云平台，帮助物业企业实现物业服务无缝对接。</p>
+    			</div>
+    		</div> <!-- heading row end -->
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="row">
+						<div class="col-md-12 wow slideInLeft" data-wow-delay=".3s">
+							<div class="about-inner ">
+	                            <i class="icon icon-envelope"></i>
+	                            <div class="about-content">
+	                                <h4>小区公告</h4>
+	                                <p> 在线发布，及时传达<br />停水停电、天气预警，重要通知不再错过</p>
+	                            </div>
+	                        </div>
+						</div>
+						<div class="col-md-12  wow slideInLeft" data-wow-delay=".5s">
+							<div class="about-inner ">
+	                            <i class="icon icon-camera"></i>
+	                            <div class="about-content">
+	                                <h4>在线报修</h4>
+	                                <p> 拍照报修，准确定位<br />水管坏了、马桶堵了，报修沟通不再吃力</p>
+	                            </div>
+	                        </div>
+						</div>
+					</div> <!-- row end -->
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-4 visible-md visible-lg wow fadeInDown" data-wow-delay=".3s">
+                    <img src="images/sec-img/img2.png" alt="" class="img-responsive">
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                	<div class="row">
+						<div class="col-md-12 wow slideInRight" data-wow-delay=".3s">
+							<div class="about-inner ">
+	                            <i class="icon icon-pricetags"></i>
+	                            <div class="about-content">
+	                                <h4>物业账单</h4>
+	                                <p> 缴费日期，及时提醒<br />物业费、停车费，缴费项目不再疑惑</p>
+	                            </div>
+	                        </div>
+						</div>
+						<div class="col-md-12 wow slideInRight" data-wow-delay=".5s">
+							<div class="about-inner ">
+	                            <i class="icon icon-phone"></i>
+	                            <div class="about-content">
+	                                <h4>生活服务</h4>
+	                                <p> 便民服务，一应俱全<br />寄快递、叫外卖，常用电话不再忘记</p>
+	                            </div>
+	                        </div>
+						</div>
+					</div> <!-- row end -->
+                </div>
+			</div><!-- row end -->
+    	</div><!-- container end -->
+    </section>
+    <!-- Section features end -->
+
+	<!-- section about start -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+    			<div class="heading-inner text-center">
+    				<h2 class="sec-title">我们的<span>优势</span> </h2>
+                     
+    				<p>专业的团队，成员来自国内一线互联网公司</p>
+                    <p>周到的服务，从推广到实施，全程提供指导</p>
+                    <p>持续的更新，客户端与后台系统不间断更新</p>
+    			</div>
+    		</div> <!-- heading row end -->
+			<div class="row">
+    			<div class="feature-wrapper text-center">
+    				<div class="col-md-3 col-sm-6 col-xs-12 feature-bg wow fadeInUp" data-wow-delay=".3s">
+    					<div class="feature-inner text-center">
+                            <div class="icon-box">
+                                <i class="icon icon-heart"></i>
+                            </div>
+    						
+    						<div class="feature-content">
+    							<h3>用户体验好</h3>
+    							<p>运行流畅、设计精美、操作简单</p>
+                                <p>连安卓用户都说一点儿也不卡</p>
+    						</div>
+    					</div>
+    				</div> <!-- item1 end -->
+    				<div class="col-md-3 col-sm-6 col-xs-12 feature-bg white wow fadeInUp" data-wow-delay=".5s">
+    					<div class="feature-inner text-center">
+                            <div class="icon-box">
+    						  <i class="icon icon-genius"></i>
+                            </div>
+    						<div class="feature-content">
+    							<h3>实施成本低</h3>
+    							<p>云端部署，一次付费，拒绝ERP</p>
+                                <p>操作门槛低，上门安装还帮您运营</p>
+    						</div>
+    					</div>
+    				</div> <!-- item2 end -->
+    				<div class="col-md-3 col-sm-6 col-xs-12 feature-bg wow fadeInUp" data-wow-delay=".7s">
+    					<div class="feature-inner text-center">
+                            <div class="icon-box">
+    						  <i class="icon icon-presentation"></i>
+                            </div>
+    						<div class="feature-content">
+    							<h3>业主粘性强</h3>
+    							<p>推广方案、活动策划、省心省力</p>
+                                <p>基于业主行为数据提供个性化服务</p>
+    						</div>
+    					</div>
+    				</div> <!-- item3 end -->
+    				<div class="col-md-3 col-sm-6 col-xs-12 feature-bg white wow fadeInUp" data-wow-delay=".9s">
+    					<div class="feature-inner text-center">
+                            <div class="icon-box ">
+    						  <i class="icon icon-tools"></i>
+                            </div>
+    						<div class="feature-content">
+    							<h3>管理效率高</h3>
+    							<p>报修报事、流程管控、责任清晰</p>
+                                <p>管理行为可视化，业务流程可追溯</p>
+    						</div>
+    					</div>
+    				</div> <!-- item4 end -->
+    			</div><!-- feature-wrapper end -->
+    		</div><!-- row end -->
+		</div>	<!-- container end -->
+	</section>
+	<!-- section about end -->
+    
+	<!-- Section Benifit start -->
+	<section id="benefit" class="benifit">
+		<div class="bg-overlay pattern"></div>
+			<div class="container">
+				<div class="col-md-12">
+	    			<div class="heading-inner text-center">
+	    				<h2 class="sec-title">产品<span>价值</span></h2>
+                        <div class="line-btm c-white"></div>
+	    				<p>帮助物业公司进行行业升级，带来更丰富的盈利模式</p>
+	    			</div>
+	    		</div> <!-- heading row end -->
+	    		<div class="row">
+	    			<div class="col-md-4 col-sm-4">
+	    				<div class="item-wrapper">
+	    				 	<ul class="item-list-left">
+	    				 		<li class="wow fadeInDown" data-wow-delay=".3s">
+		    				 		 <i class="icon icon-adjustments"></i>
+		    				 		 <div class="item-content">
+			    				 		<h3>整合信息资源</h3>
+			    				 		<p>打破组织信息孤岛<br />建立完整有效的数据库</p>
+		    				 		</div>
+	    				 		</li>
+	    				 		<li class="wow fadeInDown" data-wow-delay=".6s">
+		    				 		<i class="icon icon-trophy"></i>
+		    				 		<div class="item-content">
+			    				 		<h3>提升服务品质</h3>
+			    				 		<p>缩短沟通时间和过程<br />提高服务效率和品质</p>
+		    				 		</div>
+	    				 		</li>
+	    				 		<li class="wow fadeInDown" data-wow-delay=".9s">
+		    				 		<i class="icon icon-documents"></i>
+		    				 		<div class="item-content">
+			    				 		<h3>降低运营成本</h3>
+			    				 		<p>随时随地地处理业主<br />节约办公耗材费用</p>
+		    				 		</div>
+	    				 		</li>
+
+	    				 	</ul>
+	    				 </div> 
+	    			</div> <!-- col-md-4 end -->
+	    			<div class="col-md-8 col-sm-8">
+                        <img src="images/slider/MacBook.png">
+	    			</div>
+	    		</div><!-- row end -->
+		</div> <!-- container end -->
+	</section>
+	<!-- Section Benifit End -->
+
+	<section id="download">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 wow fadeInLeft" data-wow-delay=".3s">
+					<div class="download-inner text-left">
+						<h2> <span>下载</span> 芝麻管家 </h2>
+						<p>点击下载芝麻管家<br />开启智慧生活。</p>
+
+						<div class="btn-container">
+							<a href="#"><i class="fa fa-android"></i></a>
+							<a href="https://itunes.apple.com/app/id1061866053?mt=8" target="_blank"><i class="fa fa-apple"></i></a>
+						</div>
+					</div> <!-- download-inner end -->
+				</div> <!-- col-md-8 end -->
+				<div class="col-md-5 wow fadeInRight hidden-sm " data-wow-delay=".3s">
+					<div class="flaoting-img">
+						<img src="images/app1.png" alt="" class="img-responsive">
+					</div>
+				</div>
+			</div>  <!-- rowr end  -->
+		</div> <!-- container end  -->
+	</section>
+	<!-- section download end -->
+
+	<!-- Clients start -->
+	<section id="clients" class="clients landing_page_clients">
+		<div class="container">
+			<div class="row wow fadeInLeft">
+				<div class="col-md-12 col-xs-12">
+			      <div id="client-carousel" class=" owl-carousel owl-theme text-center client-carousel">
+			        <figure class="item client_logo">
+			          <a href="https://itunes.apple.com/app/id1061866053?mt=8">
+			            <img src="images/clients/client1.png" alt="client">
+			          </a>
+			        </figure>
+			        <figure class="item client_logo">
+			          <a href="#">
+			            <img src="images/clients/client1.png" alt="client">
+			          </a>
+			        </figure>
+			        <figure class="item client_logo">
+			          <a href="#">
+			            <img src="images/clients/client1.png" alt="client">
+			          </a>
+			        </figure>
+			        <figure class="item client_logo">
+			          <a href="#">
+			            <img src="images/clients/client1.png" alt="client">
+			          </a>
+			        </figure>
+			        <figure class="item client_logo">
+			          <a href="#">
+			            <img src="images/clients/client1.png" alt="client">
+			          </a>
+			        </figure>
+			        <figure class="item client_logo">
+			          <a href="#">
+			            <img src="images/clients/client1.png" alt="client">
+			          </a>
+			        </figure>
+			        <figure class="item client_logo">
+			          <a href="#">
+			            <img src="images/clients/client1.png" alt="client">
+			          </a>
+			        </figure>
+			        <figure class="item client_logo">
+			          <a href="#">
+			            <img src="images/clients/client1.png" alt="client">
+			          </a>
+			        </figure>
+			      </div><!-- Owl carousel end -->
+		    	</div><!-- col-md-12 end -->
+	    	</div><!-- Content row end -->
+		</div><!--/ Container end -->
+	</section><!--/ Clients end -->
+
+	<!-- section Contact start -->
+	<section id="contact" >
+    <div class="bg-overlay pattern"></div>
+		<div class="container">
+          <div class="row">  
+			<div class="col-md-12">
+    			<div class="heading-inner text-center">
+    				<h2 class="sec-title"><span>关于</span>我们</h2>
+                    <div class="line-btm c-white"></div>                 
+                    <p>上海尚房信息科技有限公司是一家专业的智慧社区运营商，</p>
+                    <p>专注于服务物业企业与业主，希望借助互联网+物业，以社区生活场景为导向，</p>
+                    <p>帮助物业企业打造互联网化的管理工具 ，解决长期困扰物业的实际难题，</p>
+                    <p>从而重构物业服务体系，帮助物业企业转型升级。</p>
+                    <p>尚房科技依托自身强大的技术实力和丰富的运营经验，</p>
+                    <p>已与扬州、南通、青岛等地的房地产公司及物业公司建立了紧密的合作关系</p>
+                    <br />
+                    <p>我们的使命：用科技改善生活，用数据创造价值</p>
+    				<p>我们的愿景：与物业企业一起，营造智能、和谐的小区生活环境，为智慧城市建设提供支撑</p>
+    			</div>
+    		</div>
+          </div><!-- heading row end -->
+          <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-4">
+                  <div class="qrcode center-block">
+                    <img src="images/qrcode.png" class="img-responsive" alt="芝麻管家二维码"/>
+                  </div>
               </div>
-              <div class="span2"></div>
-            </div>
+              <div class="col-md-4"></div>
           </div>
-        </div>
-      </div>
+		</div><!-- container end -->
+	</section>
+	<!-- section Contact end -->
+
+	<!-- section Footer start  -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+                    <div class="row text-center">
+							<div class="col-md-4">
+							     <p>地址：上海市徐汇区云锦路500号A座2219室</p>
+							</div>
+							<div class="col-md-4">
+								<p>电话：021-64566096</p>
+							</div>
+							<div class="col-md-4">
+								<p>商务合作:bd@zhimaguanjia.com.cn</p>
+							</div>
+						</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="copyright">
+								<p>&copy; copyright reserved to <span>尚房科技</span> - 2015</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="copyright">
+								<p class="pull-right"><a href="legal.html" target="_blank" title="法律声明">法律声明 </a>|<a href="terms.html" title="用户协议" target="_blank"> 用户协议 </a>|<a href="privacy.html" title="隐私政策" target="_blank"> 隐私政策</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- row end  -->
+		</div> <!-- container end  -->
+	</footer>
+	<!-- section Footer end  -->
+
+	
+	<!-- Back To Top Button -->
+    <div id="back-top" style="none;">
+      <a href="#slider-part" class="page-scroll btn btn-primary" ><i class="fa fa-angle-double-up"></i></a>
     </div>
-    <div class="row-fluid">
-      <div class="span12">
-        <div class="hero-unit">
-          <div class="slogan">
-            <h1>你的小事，我们的大事</h1>
-            <p><a href="http://itunes.apple.com/app/id1061866053?mt=8" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:165px;height:40px;"></a></p>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row-fluid mgb50">
-      <div class="summary center">
-        <div class="span2"> </div>
-        <div class="span8">
-          <div class="page-header">
-            <h3><a name="summary"></a>概述</h3>
-          </div>
-          <p class="center">芝麻管家通过移动互联网的方式，为小区居民提供全面社区生活服务，</p>
-          <p class="center">提供便捷生活消费服务，帮助物业公司提供更好的物业管理服务，旨在提升业主满意度。 </p>
-          <br />
-          <div class="row-fluid center">
-            <div class="span3"> <img src="images/icon-1-hover.png" alt="小区通知"> </div>
-            <div class="span3"><img src="images/icon-2-hover.png" alt="物业报修"></div>
-            <div class="span3"><img src="images/icon-3-hover.png" alt="投诉建议"></div>
-            <div class="span3"><img src="images/icon-4-hover.png" alt="物业账单"></div>
-          </div>
-        </div>
-        <div class="span2"> </div>
-      </div>
-    </div>
-  </div>
-  <div class="row-fluid mgb50">
-    <div class="feature center">
-      <div class="span2"> </div>
-      <div class="span8">
-        <div class="page-header title">
-          <h3><a name="feature"></a>特性</h3>
-        </div>
-        <div class="row-fluid">
-          <div class="span2"></div>
-          <div class="span8"> <img src="http://7xnh17.com1.z0.glb.clouddn.com/feature.png" alt="功能 物业报修 缴费账单" width="600" height="510"> </div>
-          <div class="span2"></div>
-        </div>
-        <div class="span2"> </div>
-      </div>
-    </div>
-  </div>
-  <div class="row-fluid mgb50">
-    <div class="download center">
-      <div class="span2"> </div>
-      <div class="span8">
-        <div class="page-header title">
-          <h3><a name="download"></a>下载</h3>
-        </div>
-        <img alt="140x140" src="images/qrcode.png" />
-        <p>扫码下载，开启智慧社区</p>
-      </div>
-      <div class="span2"> </div>
-    </div>
-  </div>
-  <div class="row-fluid mgb50">
-    <div class="about center">
-      <div class="span2"> </div>
-      <div class="span8">
-        <div class="page-header title">
-          <h3><a name="about"></a>关于</h3>
-        </div>
-        <div class="row-fluid">
-          <div class="span2"></div>
-          <div class="span8">
-            <p>上海尚房信息科技有限公司是一家成长中的创业公司</p>
-            <p>专注于服务物业企业与业主</p>
-            <p>希望借助互联网，以社区生活场景为导向</p>
-            <p>搭建连接业主与物业服务的平台，不断做出突破性的商业模式创新</p>
-            <p>从而重构物业服务体系，达到降低管理成本</p>
-            <p>提升管理效率、提高业主满意度的目的</p>
-            <br />
-            <p>公司的愿景是与物业企业一起营造智能、和谐的</p>
-            <p>社区生活环境，共同为智慧城市建设提供支持</p>
-          </div>
-          <div class="span2"></div>
-        </div>
-        <div class="span2"> </div>
-      </div>
-    </div>
-  </div>
-  <div class="row-fluid">
-    <div class="footer center">
-      <div class="span4">
-        <p>联系我们</p>
-        <p>地址：上海市徐汇区云锦路500号A座2219室</p>
-        <p>电话：021-6456606</p>
-      </div>
-      <div class="span4">
-        <p>关注我们</p>
-        <img src="images/footer.png" border="0" usemap="#Map">
-        <map name="Map">
-          <area shape="rect" coords="1,-1,4,12" href="#">
-          <area shape="rect" coords="-16,-4,55,43" href="http://weibo.com/u/5661595168" target="_blank">
-          <area shape="rect" coords="67,2,114,38" href="#">
-          <area shape="rect" coords="126,0,187,45" href="#">
-        </map>
-        <div class="copyright">
-          <p>© 2015 尚房科技 <a href="legal.html">法律声明</a> <a href="terms.html">用户协议</a> <a href="privacy.html">隐私政策</a></p>
-        </div>
-      </div>
-      <div class="span4">
-        <p>商务合作</p>
-        <p>E-mail：bd@shangfangtech.com.cn</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</body>
+    <!-- End Back To Top Button -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.useso.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- initialize jQuery Library -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Bootstrap jQuery -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Style Switcher -->
+    <script type="text/javascript" src="js/isotope.js"></script>
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <!-- PrettyPhoto -->
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <!-- Isotope -->
+    <script type="text/javascript" src="js/isotope.js"></script>
+    <!-- Wow Animation -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <!-- SmoothScroll -->
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <!-- Eeasing -->
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <!-- Counter -->
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <!-- Waypoints -->
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <!-- Scrolling navigation -->
+    <script type="text/javascript" src="js/scrolling-nav.js"></script>
+    <!-- Google Map API Key Source -->
+    
+    <!-- Custom js -->
+    <script type="text/javascript" src="js/custom.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+    <script>
+        
+   $('.counter').counterUp({
+            delay: 100,
+            time: 2000
+        });
+    </script>
+  </body>
 </html>
